@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PixKit 隐私政策 / Privacy Policy</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; max-width: 720px; margin: 0 auto; padding: 24px; }
+        h1 { font-size: 1.5rem; margin-bottom: 8px; }
+        h2 { font-size: 1.1rem; margin-top: 24px; margin-bottom: 8px; color: #555; }
+        .lang-tabs { margin-bottom: 24px; }
+        .lang-tabs a { display: inline-block; padding: 8px 16px; margin-right: 8px; background: #EDE8F5; color: #7B5FC6; text-decoration: none; border-radius: 8px; font-weight: 500; }
+        .lang-tabs a.active { background: #7B5FC6; color: #fff; }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
+        p { margin: 0 0 12px; }
+        ul { margin: 0 0 12px; padding-left: 24px; }
+        .updated { color: #666; font-size: 0.9rem; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>PixKit 隐私政策 / Privacy Policy</h1>
+    <div class="lang-tabs">
+        <a href="#" class="active" data-lang="zh">中文</a>
+        <a href="#" data-lang="en">English</a>
+    </div>
+
+    <section id="zh" class="lang-section active">
+        <p class="updated">最后更新：2024年</p>
+        <h2>1. 信息收集</h2>
+        <p>本应用在您的设备上本地处理图片，我们不会将您的图片上传到服务器。我们可能收集：</p>
+        <ul>
+            <li>用于广告的设备信息（Google AdMob）</li>
+            <li>用于应用改进的匿名使用数据</li>
+        </ul>
+        <h2>2. 权限</h2>
+        <ul>
+            <li>存储：用于从相册读取和保存图片</li>
+            <li>相机：用于拍照编辑</li>
+        </ul>
+        <h2>3. 广告</h2>
+        <p>我们使用 Google AdMob 展示广告。AdMob 可能收集数据用于个性化广告。您可通过应用菜单中的「隐私选项」管理广告偏好。</p>
+        <h2>4. 数据存储</h2>
+        <p>处理后的图片保存在您的设备或相册中。历史记录存储在应用本地数据库中。</p>
+        <h2>5. 联系我们</h2>
+        <p>如有隐私相关问题，请通过应用商店页面联系我们。</p>
+    </section>
+
+    <section id="en" class="lang-section">
+        <p class="updated">Last updated: 2024</p>
+        <h2>1. Information We Collect</h2>
+        <p>This app processes images locally on your device. We do not upload your images to our servers. We may collect:</p>
+        <ul>
+            <li>Device information for advertising (Google AdMob)</li>
+            <li>Anonymous usage data for app improvement</li>
+        </ul>
+        <h2>2. Permissions</h2>
+        <ul>
+            <li>Storage: To read and save images from your gallery</li>
+            <li>Camera: To take photos for editing</li>
+        </ul>
+        <h2>3. Advertising</h2>
+        <p>We use Google AdMob to show ads. AdMob may collect data for personalized ads. You can manage your ad preferences through the Privacy options in the app menu.</p>
+        <h2>4. Data Storage</h2>
+        <p>Processed images are saved to your device or gallery. History records are stored locally in the app database.</p>
+        <h2>5. Contact</h2>
+        <p>For privacy-related questions, please contact us through the app store listing.</p>
+    </section>
+
+    <script>
+        document.querySelectorAll('.lang-tabs a').forEach(function(a) {
+            a.addEventListener('click', function(e) {
+                e.preventDefault();
+                var lang = this.getAttribute('data-lang');
+                document.querySelectorAll('.lang-tabs a').forEach(function(x) { x.classList.remove('active'); });
+                document.querySelectorAll('.lang-section').forEach(function(x) { x.classList.remove('active'); });
+                this.classList.add('active');
+                document.getElementById(lang).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
